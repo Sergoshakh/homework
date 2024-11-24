@@ -1,8 +1,9 @@
 import os
 import time
-from datetime import datetime
 
-directory = os.path.abspath('first')
+#directory = os.path.abspath('first')
+#directory = "."
+directory = os.getcwd()
 
 print()
 print('    *****')
@@ -10,14 +11,11 @@ print()
 
 print(directory)
 
-os.chdir(directory)
+#os.chdir(directory)
 print('текущая дирктория', os.getcwd())
 print()
 
 for root, dirs, files in os.walk(directory):
-#    print(' root', root)
-#    print(' dirs', dirs)
-#    print(' files', files)
     for file in files:
         print(f'Oбнаружен файл: {file}')
         path = os.path.join(root)
