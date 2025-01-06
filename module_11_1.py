@@ -4,7 +4,7 @@ from io import BytesIO
 import time
 
 print()
-print(' ******** пример использования библиотеки REQUESTS ********')
+print(' ******** пример использования библиотеки REQUESTS (доступ к данным погоды от сайта open-meteo.com)********')
 
 wthr_url = "https://api.open-meteo.com/v1/forecast"
 #wthr_url = "https://api.open-meteo.com/v2/forecast"    # для проверки на ошибку
